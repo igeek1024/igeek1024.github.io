@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>iGeeker</title>
+  
+  <subtitle>Be Free. Enjoy technology</subtitle>
+  <link href="http://igeek.cloud/atom.xml" rel="self"/>
+  
+  <link href="http://igeek.cloud/"/>
+  <updated>2021-01-31T05:14:01.871Z</updated>
+  <id>http://igeek.cloud/</id>
+  
+  <author>
+    <name>Jarry Lee</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu Server on Raspberry Pi 4</title>
+    <link href="http://igeek.cloud/2021/01/29/Ubuntu%20Server%20on%20Raspberry%20Pi%204/"/>
+    <id>http://igeek.cloud/2021/01/29/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</id>
+    <published>2021-01-29T23:57:30.000Z</published>
+    <updated>2021-01-31T05:14:01.871Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;Ubuntu-Server-on-Raspberry-Pi-4&quot;&gt;&lt;a href=&quot;#Ubuntu-Server-on-Raspberry-Pi-4&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu Server on Raspberry Pi 4&quot;&gt;&lt;/a&gt;Ubuntu Server on Raspberry Pi 4&lt;/h1&gt;&lt;h2 id=&quot;1-镜像烧录&quot;&gt;&lt;a href=&quot;#1-镜像烧录&quot; class=&quot;headerlink&quot; title=&quot;1. 镜像烧录&quot;&gt;&lt;/a&gt;1. 镜像烧录&lt;/h2&gt;&lt;p&gt;访问 &lt;a href=&quot;https://www.raspberrypi.org/software/%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E5%B9%B3%E5%8F%B0%E7%9A%84Raspberry&quot;&gt;https://www.raspberrypi.org/software/下载对应平台的Raspberry&lt;/a&gt; Pi Imager&lt;/p&gt;
+&lt;p&gt;安装并打开Raspberry Pi Imager，选择对应的操作系统。这里我选择ubuntu 20.10 64位，因为目前docker已经放弃对32位系统的支持。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.loli.net/2021/01/30/1vGnK5iVrF8IPMJ.png&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://i.loli.net/2021/01/30/1vGnK5iVrF8IPMJ.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose OS； 2. Other general purpose OS； 3.ubuntu； 4. ubuntu server 20.10 (RPi3/4/400);  5. Choose SD Card; 6. WRITE</summary>
+    
+    
+    
+    
+    <category term="linux" scheme="http://igeek.cloud/tags/linux/"/>
+    
+    <category term="ubuntu" scheme="http://igeek.cloud/tags/ubuntu/"/>
+    
+    <category term="raspberry pi" scheme="http://igeek.cloud/tags/raspberry-pi/"/>
+    
+    <category term="zsh" scheme="http://igeek.cloud/tags/zsh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gitalk的神奇redirect_uri_mismatch故障与修复</title>
+    <link href="http://igeek.cloud/2021/01/15/Gitalk%E7%9A%84%E7%A5%9E%E5%A5%87redirect_uri_mismatch%E6%95%85%E9%9A%9C%E4%B8%8E%E4%BF%AE%E5%A4%8D/"/>
+    <id>http://igeek.cloud/2021/01/15/Gitalk%E7%9A%84%E7%A5%9E%E5%A5%87redirect_uri_mismatch%E6%95%85%E9%9A%9C%E4%B8%8E%E4%BF%AE%E5%A4%8D/</id>
+    <published>2021-01-15T08:57:04.000Z</published>
+    <updated>2021-01-16T09:54:58.063Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;p&gt;事情的经过是这样的：&lt;/p&gt;
+&lt;p&gt;上一篇博文原始名叫《2021年了，Ubuntu Touch还能玩吗（前篇）》，&lt;strong&gt;可以看到中间包含了中文标点符号“，”和“（）”&lt;/strong&gt;，hexo中一切顺利，没有任何错误。于是&lt;code&gt;hexo d -g&lt;/code&gt;发布了，过了一段时间发现Gitalk还没初始化，于是我点了一下，神奇的事情发生了，博客瞬间回到了首页，评论也没顺利初始化。&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;https://img.imgdb.cn/item/60015a0e3ffa7d37b349fcea.jpg&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://img.imgdb.cn/item/60015a0e3ffa7d37b349fcea.jpg&quot; style=&quot;zoom:60%;&quot; &gt;&lt;/a&gt;&lt;/center&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="http://igeek.cloud/tags/hexo/"/>
+    
+    <category term="gitalk" scheme="http://igeek.cloud/tags/gitalk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021年Ubuntu Touch还能玩吗_前篇</title>
+    <link href="http://igeek.cloud/2021/01/15/2021%E5%B9%B4Ubuntu%20Touch%E8%BF%98%E8%83%BD%E7%8E%A9%E5%90%97_%E5%89%8D%E7%AF%87/"/>
+    <id>http://igeek.cloud/2021/01/15/2021%E5%B9%B4Ubuntu%20Touch%E8%BF%98%E8%83%BD%E7%8E%A9%E5%90%97_%E5%89%8D%E7%AF%87/</id>
+    <published>2021-01-15T03:33:21.000Z</published>
+    <updated>2021-01-15T08:50:55.989Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;center&gt;&lt;a href=&quot;https://img.imgdb.cn/item/600112173ffa7d37b3203c1a.jpg&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://img.imgdb.cn/item/600112173ffa7d37b3203c1a.jpg&quot; style=&quot;zoom:40%;&quot; /&gt;&lt;/a&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;1-背景介绍&quot;&gt;&lt;a href=&quot;#1-背景介绍&quot; class=&quot;headerlink&quot; title=&quot;1. 背景介绍&quot;&gt;&lt;/a&gt;1. 背景介绍&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Ubuntu Touch（又称Ubuntu Phone）是Ubuntu操作系统的移动版本，由UBports社区开发，它的用户界面是用Qt编写的，主要是为智能手机和平板电脑等触屏移动设备设计的，但最初的融合目标是想把Ubuntu Touch带到笔记本电脑、台式机、物联网设备、电视和智能手表上，实现完整统一的用户体验。</summary>
+    
+    
+    
+    
+    <category term="ubuntu touch" scheme="http://igeek.cloud/tags/ubuntu-touch/"/>
+    
+    <category term="linux" scheme="http://igeek.cloud/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>显微摄影 1(虫恐警告)</title>
+    <link href="http://igeek.cloud/2021/01/13/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B11/"/>
+    <id>http://igeek.cloud/2021/01/13/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B11/</id>
+    <published>2021-01-13T10:00:08.000Z</published>
+    <updated>2021-01-13T10:15:20.130Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;显微摄影1&quot;&gt;&lt;a href=&quot;#显微摄影1&quot; class=&quot;headerlink&quot; title=&quot;显微摄影1&quot;&gt;&lt;/a&gt;显微摄影1&lt;/h1&gt;&lt;h2 id=&quot;A-标本的选择&quot;&gt;&lt;a href=&quot;#A-标本的选择&quot; class=&quot;headerlink&quot; title=&quot;A.标本的选择&quot;&gt;&lt;/a&gt;A.标本的选择&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://img.imgdb.cn/item/5ffec7863ffa7d37b3ead6c0.jpg&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://img.imgdb.cn/item/5ffec7863ffa7d37b3ead6c0.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;strong&gt;本系列标本来源均为合法的标本经营网店，商家网店首页明确标明商家拥有的相应经营许可证和资质。请勿非法采集野生动植物标本！部分昆虫已列入国家一级、二级保护动物，请避免相关法律风险！&lt;/strong&gt;</summary>
+    
+    
+    
+    
+    <category term="gallery" scheme="http://igeek.cloud/tags/gallery/"/>
+    
+    <category term="显微摄影" scheme="http://igeek.cloud/tags/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="Wemacro" scheme="http://igeek.cloud/tags/Wemacro/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo中highlight.js代码高亮的修改方法</title>
+    <link href="http://igeek.cloud/2021/01/13/hexo%E4%B8%ADhighlight-js%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/"/>
+    <id>http://igeek.cloud/2021/01/13/hexo%E4%B8%ADhighlight-js%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</id>
+    <published>2021-01-13T03:04:16.000Z</published>
+    <updated>2021-01-13T03:54:40.346Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;p&gt;Ayer主题自带的代码高亮一直没能激活成功，研究了好久，琢磨出一个可行的方案：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;https://img.imgdb.cn/item/5ffe6bd13ffa7d37b39cbda5.jpg&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://img.imgdb.cn/item/5ffe6bd13ffa7d37b39cbda5.jpg&quot;/&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://img.imgdb.cn/item/5ffe6c863ffa7d37b39d33ce.jpg&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://img.imgdb.cn/item/5ffe6c863ffa7d37b39d33ce.jpg&quot;/&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;效果预览&lt;/p&gt;
+&lt;h2 id=&quot;1-修改hexo的配置文件-config-yml&quot;&gt;&lt;a href=&quot;#1-修改hexo的配置文件-config-yml&quot; class=&quot;headerlink&quot; title=&quot;1. 修改hexo的配置文件_config.yml&quot;&gt;&lt;/a&gt;1. 修改hexo的配置文件_config.yml&lt;/h2&gt;&lt;p&gt;注意不要修改主题的配置文件，注释掉多余的项，将hexo内建的highlight功能和prismjs关闭避免干扰。我们将在主题的其他位置添加&lt;code&gt;highlight.js&lt;/code&gt;功能。hexo内建的highlight是在运行&lt;code&gt;hexo g&lt;/code&gt;或者&lt;code&gt;hexo s&lt;/code&gt;时渲染高亮，而我们的目的是将渲染交给浏览器来进行。</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="http://igeek.cloud/tags/hexo/"/>
+    
+    <category term="highlight.js" scheme="http://igeek.cloud/tags/highlight-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客中Hexo-light-gallery插件的安装折腾</title>
+    <link href="http://igeek.cloud/2021/01/12/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADhexo-light-gallery%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E6%8A%98%E8%85%BE/"/>
+    <id>http://igeek.cloud/2021/01/12/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADhexo-light-gallery%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E6%8A%98%E8%85%BE/</id>
+    <published>2021-01-12T08:08:34.000Z</published>
+    <updated>2021-01-13T03:00:44.143Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;作为一个摄影爱好者，在博客中展示图片是一个刚需。由于刚开始解除hexo，主题自带的的fancybox插件图片的展示效果实在是不太满意。在&lt;a href=&quot;https://hexo.io/plugins/&quot;&gt;hexo插件&lt;/a&gt;中搜索一下，发现了一个看起来很满意的插件：&lt;a href=&quot;https://github.com/lzane/hexo-light-gallery&quot;&gt;Hexo-light-gallery&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://img.imgdb.cn/item/5ffd5b603ffa7d37b3e435d0.jpg&quot; title=&quot;Hexo-light-gallery&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://img.imgdb.cn/item/5ffd5b603ffa7d37b3e435d0.jpg&quot; alt=&quot;Hexo-light-gallery&quot;&gt;&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="http://igeek.cloud/tags/hexo/"/>
+    
+    <category term="gallery" scheme="http://igeek.cloud/tags/gallery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>显微摄影相册1_太阳蛾</title>
+    <link href="http://igeek.cloud/2021/01/11/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1%E7%9B%B8%E5%86%8C1_%E5%A4%AA%E9%98%B3%E8%9B%BE/"/>
+    <id>http://igeek.cloud/2021/01/11/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1%E7%9B%B8%E5%86%8C1_%E5%A4%AA%E9%98%B3%E8%9B%BE/</id>
+    <published>2021-01-11T10:44:22.000Z</published>
+    <updated>2021-01-12T09:33:18.378Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;p&gt;2020年的测试作品，记录一下。&lt;br&gt;&lt;a href=&quot;https://img.imgdb.cn/item/5ffd6cc43ffa7d37b3f1b6ad.jpg&quot; title=&quot;合集&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://img.imgdb.cn/item/5ffd6cc43ffa7d37b3f1b6ad.jpg&quot; alt=&quot;合集&quot;&gt;&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="显微摄影" scheme="http://igeek.cloud/tags/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="Wemacro" scheme="http://igeek.cloud/tags/Wemacro/"/>
+    
+    <category term="Nikon ELWD" scheme="http://igeek.cloud/tags/Nikon-ELWD/"/>
+    
+    <category term="太阳蛾" scheme="http://igeek.cloud/tags/%E5%A4%AA%E9%98%B3%E8%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一场怀旧行动</title>
+    <link href="http://igeek.cloud/2021/01/11/%E4%B8%80%E5%9C%BA%E6%80%80%E6%97%A7%E8%A1%8C%E5%8A%A8/"/>
+    <id>http://igeek.cloud/2021/01/11/%E4%B8%80%E5%9C%BA%E6%80%80%E6%97%A7%E8%A1%8C%E5%8A%A8/</id>
+    <published>2021-01-11T01:57:39.000Z</published>
+    <updated>2021-01-12T10:31:12.048Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;p&gt;2020年就快要过去了，在这年底最后的一个月初，我和老婆迎来了我们的第一个孩子。女儿的来临给我们带来了无数的待做事项。也彻底改变了我们的生活。</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>

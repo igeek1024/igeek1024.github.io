@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+
+<html lang="zh_CN">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    2021年Ubuntu Touch还能玩吗_前篇 |  iGeeker
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="iGeeker" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-2021年Ubuntu Touch还能玩吗_前篇"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  2021年Ubuntu Touch还能玩吗_前篇
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/15/2021%E5%B9%B4Ubuntu%20Touch%E8%BF%98%E8%83%BD%E7%8E%A9%E5%90%97_%E5%89%8D%E7%AF%87/" class="article-date">
+  <time datetime="2021-01-15T03:33:21.000Z" itemprop="datePublished">2021-01-15</time>
+</a>  
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<center><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600112173ffa7d37b3203c1a.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600112173ffa7d37b3203c1a.jpg" style="zoom:40%;" /></a></center>
+
+<h2 id="1-背景介绍"><a href="#1-背景介绍" class="headerlink" title="1. 背景介绍"></a>1. 背景介绍</h2><blockquote>
+<p>Ubuntu Touch（又称Ubuntu Phone）是Ubuntu操作系统的移动版本，由UBports社区开发，它的用户界面是用Qt编写的，主要是为智能手机和平板电脑等触屏移动设备设计的，但最初的融合目标是想把Ubuntu Touch带到笔记本电脑、台式机、物联网设备、电视和智能手表上，实现完整统一的用户体验。<a id="more"></a>该项目由Canonical Ltd.发起，但Mark Shuttleworth于2017年4月5日宣布Canonical将因缺乏市场兴趣而终止支持，随后被UBports采纳为社区项目，UBports项目由Marius Gripsgard于2015年发起，源码被转移到UBports基金会，现居于此。UBports的使命是支持Ubuntu Touch的合作开发，并促进其广泛使用。</p>
+</blockquote>
+<p align="right">---Wikipedia</p>
+
+<p>从2015年知道这个项目开始，就对ubuntu touch充满了兴趣，但是当时的工作较忙，一直没能体验一番。经过了这么多年的时间，在2021年的一个偶然间，发现ubuntu touch仍然在更新。突然间被UBports的坚持所打动。于是翻阅了支持<a target="_blank" rel="noopener" href="https://devices.ubuntu-touch.io/">ubuntu touch 的设备</a>，发现在抽屉吃灰很久的Nexus 5居然在支持列表，感动啊o(￣▽￣)ｄ </p>
+<p><em>真相是：看到了B站大佬稚晖君的Quark-N小可爱，可惜自己没有能力动手做一个，于是想看旧手机能否改造一个小型的linux服务器。。。。。。</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600114b33ffa7d37b322b6d9.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600114b33ffa7d37b322b6d9.jpg"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/6001159c3ffa7d37b3233984.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/6001159c3ffa7d37b3233984.jpg"></a></td>
+</tr>
+</tbody></table>
+<center>谁不想要一个小可爱呢</center>
+
+<h2 id="2-刷机"><a href="#2-刷机" class="headerlink" title="2. 刷机"></a>2. 刷机</h2><p>首先确定自己的手机在ubuntu touch的支持范围，本来想着用pixle一代来搞的，但是很可惜，不在支持列表。只能换更老旧的nexus 5。再贴一次支持列表：<a target="_blank" rel="noopener" href="https://devices.ubuntu-touch.io/">ubuntu touch 的设备</a> 。刷机前请确保已经解锁Bootloader，由于我的nexus 5早就已经解锁，所以略过。不过话说回来，当年的很多刷机的资源现在也很难找到了，2021年再解锁和刷机确实很麻烦呐。</p>
+<center><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600120093ffa7d37b329048a.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600120093ffa7d37b329048a.jpg" style="zoom:60%;" ></a></center>
+
+<ol>
+<li><p><strong>插电，开机</strong> 首先进入bootloader，由于是旧手机，里面的东西也无需备份了。。。连上USB线，在电脑上装上驱动。这年头win10已经大量装机了，安装驱动直接在windows update里就行。安装方法是：设置–更新和安全–查看可选更新–驱动程序更新找到LeMobile Android Device安装即可。</p>
+</li>
+<li><p>下载<a target="_blank" rel="noopener" href="https://ubuntu-touch.io/zh_CN/get-ubuntu-touch">UBports安装程序</a> , 三个平台都支持，UBports真是很给力呢。</p>
+<center><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600123883ffa7d37b32a89f4.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600123883ffa7d37b32a89f4.jpg" style="zoom:40%;" ></a></center>
+</li>
+<li><p>根据提示操作即可，开始会提示安装Universal ADB driver，直接点击下载安装即可。如果遇到系统镜像一直下载失败，那么你懂的┑(￣Д ￣)┍。安装过程会让选择安装的版本，直接选择最新的16.04devel即可，ubuntu touch是每日更新，每天都有新的OTA可以升级，目前版本已经累计到了1800+了，简直就是OTA党的快乐机啊。。。</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>刷机</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600127643ffa7d37b32c1085.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600127643ffa7d37b32c1085.jpg"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600125cf3ffa7d37b32b7531.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600125cf3ffa7d37b32b7531.jpg"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600125ec3ffa7d37b32b7e71.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600125ec3ffa7d37b32b7e71.jpg"></a></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600126253ffa7d37b32b91e4.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600126253ffa7d37b32b91e4.jpg"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600126463ffa7d37b32ba187.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600126463ffa7d37b32ba187.jpg"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/600127353ffa7d37b32c02d7.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/600127353ffa7d37b32c02d7.jpg"></a></td>
+</tr>
+</tbody></table>
+<ol start="4">
+<li>安装过程中会重新刷写新的bootloader和recover，开机就有<del>炫酷的</del>ubuntu logo。一杯咖啡的时间后， 系统便刷写完成，开机尝鲜。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01c6.png" class="gallery-item"><img src="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01c6.png"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01ca.png" class="gallery-item"><img src="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01ca.png"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01ce.png" class="gallery-item"><img src="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01ce.png"></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01d8.png" class="gallery-item"><img src="https://img.imgdb.cn/item/60012b5e3ffa7d37b32e01d8.png"></a></td>
+</tr>
+</tbody></table>
+<p>未完待续。</p>
+</div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu-touch/" rel="tag">ubuntu touch</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2021/01/15/Gitalk%E7%9A%84%E7%A5%9E%E5%A5%87redirect_uri_mismatch%E6%95%85%E9%9A%9C%E4%B8%8E%E4%BF%AE%E5%A4%8D/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Gitalk的神奇redirect_uri_mismatch故障与修复
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/01/13/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B11/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">显微摄影 1(虫恐警告)</div>
+      </a>
+    
+  </nav>
+
+   
+ 
+   
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'c9675f2c3a2c67d32483',
+    clientSecret: '427afd9f814d32d5bb3c42affed61d750d015556',
+    repo: 'igeek1024.github.io',
+    owner: 'igeek1024',
+    admin: ['igeek1024'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2021
+        <i class="ri-heart-fill heart_icon"></i> Jarry Lee
+        <!-- Highlight.js -->
+          <link rel="stylesheet"
+          href="//highlightjs.org/static/demo/styles/night-owl.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js">
+        </script>
+        <script>
+          hljs.initHighlightingOnLoad();
+        </script>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/igeek.svg" alt="iGeeker"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/coding">扣钉</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/3d">建模</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/gallery/">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1/">显微</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+
+<script src="/js/clickLove.js"></script>
+
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>

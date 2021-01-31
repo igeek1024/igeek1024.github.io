@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+
+<html lang="zh_CN">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    hexo中highlight.js代码高亮的修改方法 |  iGeeker
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="iGeeker" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-hexo中highlight-js代码高亮的修改方法"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  hexo中highlight.js代码高亮的修改方法
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/13/hexo%E4%B8%ADhighlight-js%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E7%9A%84%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/" class="article-date">
+  <time datetime="2021-01-13T03:04:16.000Z" itemprop="datePublished">2021-01-13</time>
+</a>  
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<p>Ayer主题自带的代码高亮一直没能激活成功，研究了好久，琢磨出一个可行的方案：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/5ffe6bd13ffa7d37b39cbda5.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/5ffe6bd13ffa7d37b39cbda5.jpg"/></a></td>
+<td><a target="_blank" rel="noopener" href="https://img.imgdb.cn/item/5ffe6c863ffa7d37b39d33ce.jpg" class="gallery-item"><img src="https://img.imgdb.cn/item/5ffe6c863ffa7d37b39d33ce.jpg"/></a></td>
+</tr>
+</tbody></table>
+<p>效果预览</p>
+<h2 id="1-修改hexo的配置文件-config-yml"><a href="#1-修改hexo的配置文件-config-yml" class="headerlink" title="1. 修改hexo的配置文件_config.yml"></a>1. 修改hexo的配置文件_config.yml</h2><p>注意不要修改主题的配置文件，注释掉多余的项，将hexo内建的highlight功能和prismjs关闭避免干扰。我们将在主题的其他位置添加<code>highlight.js</code>功能。hexo内建的highlight是在运行<code>hexo g</code>或者<code>hexo s</code>时渲染高亮，而我们的目的是将渲染交给浏览器来进行。<a id="more"></a></p>
+<pre><code class="[yml][_config.yml]"> highlight:
+     enable: false
+ #   line_number: true
+ #   auto_detect: true
+ #   tab_replace: &#39;&#39;
+ #   wrap: true
+ #   hljs: true
+ prismjs:
+     enable: false
+ #   preprocess: false
+ #   line_number: false
+ #   tab_replace: &#39;&#39;</code></pre>
+<h2 id="2-在主题内插入css和js文件"><a href="#2-在主题内插入css和js文件" class="headerlink" title="2. 在主题内插入css和js文件"></a>2. 在主题内插入css和js文件</h2><p>为了调用<code>highlight.js</code>和对应的主题，我们在主题的<code>footer.ejs</code>文件中添加如下内容：</p>
+<pre><code class="[js]">&lt;!-- Highlight.js --&gt;
+&lt;link rel=&quot;stylesheet&quot;
+        href=&quot;//highlightjs.org/static/demo/styles/night-owl.css&quot;&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js&quot;&gt;
+&lt;/script&gt;
+&lt;script&gt;
+    hljs.initHighlightingOnLoad();
+&lt;/script&gt;</code></pre>
+<p>我这里采用的是CDN加速的<code>css</code>和<code>js</code>，主题的预览可以去<a target="_blank" rel="noopener" href="https://highlightjs.org/static/demo/">highlight.js官网DEMO</a>去预览。</p>
+<h2 id="3-post中代码模块的写法"><a href="#3-post中代码模块的写法" class="headerlink" title="3. post中代码模块的写法"></a>3. post中代码模块的写法</h2><p>由于<code>highlight.js</code>中自动判断代码种类的功能异常消耗资源，建议在写md文档时就表明代码的种类，便于<code>highlight.js</code>生成更好的效果。举例如下：</p>
+<pre><code class="[md]">
+    ``` [bash]
+    $ npm install --save hexo-light-gallery
+    ```
+</code></pre>
+<p>或者：</p>
+<pre><code class="[md]">
+    ``` [yml][_config.yml]
+    highlight:
+        enable: false
+    ```
+</code></pre>
+<p>通过[    ]来引入语言的种类，具体可查询：<a target="_blank" rel="noopener" href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md</a></p>
+<hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li>ziheng’s blog: <a target="_blank" rel="noopener" href="https://zihengcat.github.io/2018/03/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0highlight-js%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/">https://zihengcat.github.io/2018/03/05/Hexo博客添加highlight-js代码高亮/</a></li>
+<li>highlight.js官网: <a target="_blank" rel="noopener" href="https://highlightjs.org/">https://highlightjs.org/</a></li>
+<li>highlight.js github：<a target="_blank" rel="noopener" href="https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md">https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md</a></li>
+</ul>
+</div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/highlight-js/" rel="tag">highlight.js</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2021/01/13/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B11/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            显微摄影 1(虫恐警告)
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/01/12/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADhexo-light-gallery%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E6%8A%98%E8%85%BE/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Hexo博客中Hexo-light-gallery插件的安装折腾</div>
+      </a>
+    
+  </nav>
+
+   
+ 
+   
+<div class="gitalk" id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'c9675f2c3a2c67d32483',
+    clientSecret: '427afd9f814d32d5bb3c42affed61d750d015556',
+    repo: 'igeek1024.github.io',
+    owner: 'igeek1024',
+    admin: ['igeek1024'],
+    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: md5(location.pathname),
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    pagerDirection: 'last'
+  })
+
+  gitalk.render('gitalk-container')
+</script>
+
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2021
+        <i class="ri-heart-fill heart_icon"></i> Jarry Lee
+        <!-- Highlight.js -->
+          <link rel="stylesheet"
+          href="//highlightjs.org/static/demo/styles/night-owl.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js">
+        </script>
+        <script>
+          hljs.initHighlightingOnLoad();
+        </script>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/igeek.svg" alt="iGeeker"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/coding">扣钉</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/3d">建模</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/gallery/">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1/">显微</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+
+<script src="/js/clickLove.js"></script>
+
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>
