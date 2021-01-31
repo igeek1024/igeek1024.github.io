@@ -95,7 +95,7 @@ $ sudo mount /dev/sdb1 /mnt/sdb #挂载磁盘
 $ sudo blkid /dev/sda1 #查询磁盘1信息
 $ sudo blkid /dev/sdb1 #查询磁盘2信息
 $ sudo nano /etc/fstab #修改自动挂载</code></pre>
-<p>在<code>/etc/fstab</code>最后加入以下内容，其中的Label为上述<code>blkid</code>命令查询结果。</p>
+<p>在<code>/etc/fstab</code>最后加入以下内容，其中的UUID为上述<code>blkid</code>命令查询结果。</p>
 <pre><code class="[bash]">UUID=******************** /mnt/sda ext4 defaults  0  2
 UUID=******************** /mnt/sdb ext4 defaults  0  2</code></pre>
 <p>运行<code>df -h</code>查看挂载后的磁盘信息，确认无误。</p>
