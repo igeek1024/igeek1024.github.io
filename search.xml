@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>Ubuntu Server on Raspberry Pi 4</title>
-    <url>/2021/01/29/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="Ubuntu-Server-on-Raspberry-Pi-4"><a href="#Ubuntu-Server-on-Raspberry-Pi-4" class="headerlink" title="Ubuntu Server on Raspberry Pi 4"></a>Ubuntu Server on Raspberry Pi 4</h1><h2 id="1-镜像烧录"><a href="#1-镜像烧录" class="headerlink" title="1. 镜像烧录"></a>1. 镜像烧录</h2><p>访问 <a href="https://www.raspberrypi.org/software/%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E5%B9%B3%E5%8F%B0%E7%9A%84Raspberry">https://www.raspberrypi.org/software/下载对应平台的Raspberry</a> Pi Imager</p>
+    <url>/2021/01/30/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="Ubuntu-Server-on-Raspberry-Pi-4"><a href="#Ubuntu-Server-on-Raspberry-Pi-4" class="headerlink" title="Ubuntu Server on Raspberry Pi 4"></a>Ubuntu Server on Raspberry Pi 4</h1><h2 id="1-镜像烧录"><a href="#1-镜像烧录" class="headerlink" title="1. 镜像烧录"></a>1. 镜像烧录</h2><p>访问 <a href="https://www.raspberrypi.org/software/">https://www.raspberrypi.org/software/</a> 下载对应平台的Raspberry Pi Imager</p>
 <p>安装并打开Raspberry Pi Imager，选择对应的操作系统。这里我选择ubuntu 20.10 64位，因为目前docker已经放弃对32位系统的支持。</p>
 <p><a href="https://i.loli.net/2021/01/30/1vGnK5iVrF8IPMJ.png" class="gallery-item"><img src="https://i.loli.net/2021/01/30/1vGnK5iVrF8IPMJ.png"></a></p>
 <ol>

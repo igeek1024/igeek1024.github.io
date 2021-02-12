@@ -6,7 +6,7 @@
   <link href="http://igeek.cloud/atom.xml" rel="self"/>
   
   <link href="http://igeek.cloud/"/>
-  <updated>2021-01-31T05:25:59.317Z</updated>
+  <updated>2021-02-12T08:41:27.630Z</updated>
   <id>http://igeek.cloud/</id>
   
   <author>
@@ -18,13 +18,13 @@
   
   <entry>
     <title>Ubuntu Server on Raspberry Pi 4</title>
-    <link href="http://igeek.cloud/2021/01/29/Ubuntu%20Server%20on%20Raspberry%20Pi%204/"/>
-    <id>http://igeek.cloud/2021/01/29/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</id>
+    <link href="http://igeek.cloud/2021/01/30/Ubuntu%20Server%20on%20Raspberry%20Pi%204/"/>
+    <id>http://igeek.cloud/2021/01/30/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</id>
     <published>2021-01-29T23:57:30.000Z</published>
-    <updated>2021-01-31T05:25:59.317Z</updated>
+    <updated>2021-02-12T08:41:27.630Z</updated>
     
     
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;Ubuntu-Server-on-Raspberry-Pi-4&quot;&gt;&lt;a href=&quot;#Ubuntu-Server-on-Raspberry-Pi-4&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu Server on Raspberry Pi 4&quot;&gt;&lt;/a&gt;Ubuntu Server on Raspberry Pi 4&lt;/h1&gt;&lt;h2 id=&quot;1-镜像烧录&quot;&gt;&lt;a href=&quot;#1-镜像烧录&quot; class=&quot;headerlink&quot; title=&quot;1. 镜像烧录&quot;&gt;&lt;/a&gt;1. 镜像烧录&lt;/h2&gt;&lt;p&gt;访问 &lt;a href=&quot;https://www.raspberrypi.org/software/%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E5%B9%B3%E5%8F%B0%E7%9A%84Raspberry&quot;&gt;https://www.raspberrypi.org/software/下载对应平台的Raspberry&lt;/a&gt; Pi Imager&lt;/p&gt;
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;Ubuntu-Server-on-Raspberry-Pi-4&quot;&gt;&lt;a href=&quot;#Ubuntu-Server-on-Raspberry-Pi-4&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu Server on Raspberry Pi 4&quot;&gt;&lt;/a&gt;Ubuntu Server on Raspberry Pi 4&lt;/h1&gt;&lt;h2 id=&quot;1-镜像烧录&quot;&gt;&lt;a href=&quot;#1-镜像烧录&quot; class=&quot;headerlink&quot; title=&quot;1. 镜像烧录&quot;&gt;&lt;/a&gt;1. 镜像烧录&lt;/h2&gt;&lt;p&gt;访问 &lt;a href=&quot;https://www.raspberrypi.org/software/&quot;&gt;https://www.raspberrypi.org/software/&lt;/a&gt; 下载对应平台的Raspberry Pi Imager&lt;/p&gt;
 &lt;p&gt;安装并打开Raspberry Pi Imager，选择对应的操作系统。这里我选择ubuntu 20.10 64位，因为目前docker已经放弃对32位系统的支持。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://i.loli.net/2021/01/30/1vGnK5iVrF8IPMJ.png&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://i.loli.net/2021/01/30/1vGnK5iVrF8IPMJ.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;

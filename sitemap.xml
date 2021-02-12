@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://igeek.cloud/2021/01/29/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</loc>
+    <loc>http://igeek.cloud/2021/01/30/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</loc>
     
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     
   </url>
   
@@ -81,7 +81,7 @@
 
   <url>
     <loc>http://igeek.cloud/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -89,91 +89,91 @@
   
   <url>
     <loc>http://igeek.cloud/tags/ubuntu-touch/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/linux/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/hexo/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/gitalk/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/gallery/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/ubuntu/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/raspberry-pi/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/zsh/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/highlight-js/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/Wemacro/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/Nikon-ELWD/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/%E5%A4%AA%E9%98%B3%E8%9B%BE/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
