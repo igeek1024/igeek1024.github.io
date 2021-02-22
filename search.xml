@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ubuntu Server@RaspberryPi中Docker的macvlan</title>
+    <url>/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="Ubuntu-Server-Raspberry-Pi中Docker的macvlan"><a href="#Ubuntu-Server-Raspberry-Pi中Docker的macvlan" class="headerlink" title="Ubuntu Server@Raspberry Pi中Docker的macvlan"></a>Ubuntu Server@Raspberry Pi中Docker的macvlan</h1><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>docker在创建应用时，必须指定端口的映射。当应用较多时，往往遇到默认的端口相互冲突的情况。配置不冲突的端口往往很麻烦。借助macvlan，可以将每个应用单独分配一个ip，且不需要设置端口映射。可以说是相当方便了。</p>
+<h2 id="2-打开网卡混杂模式"><a href="#2-打开网卡混杂模式" class="headerlink" title="2.打开网卡混杂模式"></a>2.打开网卡混杂模式</h2><pre><code class="[bash]">sudo ip link set eth0 promisc on</code></pre>
+<a id="more"></a>
+<h2 id="3-创建Docker-macvlan网络"><a href="#3-创建Docker-macvlan网络" class="headerlink" title="3. 创建Docker macvlan网络"></a>3. 创建Docker macvlan网络</h2><pre><code class="[bash]">sudo docker network create -d macvlan --subnet=192.168.2.0/24 --gateway=192.168.2.65 -o parent=eth0 macvlan_net</code></pre>
+<h2 id="4-调整已有container的网络"><a href="#4-调整已有container的网络" class="headerlink" title="4.调整已有container的网络"></a>4.调整已有container的网络</h2><p>登录portainer修改network为刚刚创建的macvlan_net，手动设置一个不冲突的ip，或者留空用DHCP自动获取。</p>
+<p><a href="https://i.loli.net/2021/02/22/C4OoJImEwiP7ctU.png" class="gallery-item"><img src="https://i.loli.net/2021/02/22/C4OoJImEwiP7ctU.png"></a></p>
+<h2 id="5-新建的container指定网络"><a href="#5-新建的container指定网络" class="headerlink" title="5.新建的container指定网络"></a>5.新建的container指定网络</h2><pre><code class="[bash]">sudo docker run --network macvlan_net *** #***为其他必要信息</code></pre>
+</div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <tags>
+        <tag>linux</tag>
+        <tag>ubuntu</tag>
+        <tag>raspberry pi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ubuntu Server on Raspberry Pi 4</title>
     <url>/2021/01/30/Ubuntu%20Server%20on%20Raspberry%20Pi%204/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="Ubuntu-Server-on-Raspberry-Pi-4"><a href="#Ubuntu-Server-on-Raspberry-Pi-4" class="headerlink" title="Ubuntu Server on Raspberry Pi 4"></a>Ubuntu Server on Raspberry Pi 4</h1><h2 id="1-镜像烧录"><a href="#1-镜像烧录" class="headerlink" title="1. 镜像烧录"></a>1. 镜像烧录</h2><p>访问 <a href="https://www.raspberrypi.org/software/">https://www.raspberrypi.org/software/</a> 下载对应平台的Raspberry Pi Imager</p>

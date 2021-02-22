@@ -6,7 +6,7 @@
   <link href="http://igeek.cloud/atom.xml" rel="self"/>
   
   <link href="http://igeek.cloud/"/>
-  <updated>2021-02-12T08:41:27.630Z</updated>
+  <updated>2021-02-22T02:20:54.678Z</updated>
   <id>http://igeek.cloud/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu Server@RaspberryPi中Docker的macvlan</title>
+    <link href="http://igeek.cloud/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/"/>
+    <id>http://igeek.cloud/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/</id>
+    <published>2021-02-22T02:18:47.000Z</published>
+    <updated>2021-02-22T02:20:54.678Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;Ubuntu-Server-Raspberry-Pi中Docker的macvlan&quot;&gt;&lt;a href=&quot;#Ubuntu-Server-Raspberry-Pi中Docker的macvlan&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu Server@Raspberry Pi中Docker的macvlan&quot;&gt;&lt;/a&gt;Ubuntu Server@Raspberry Pi中Docker的macvlan&lt;/h1&gt;&lt;h2 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1.前言&quot;&gt;&lt;/a&gt;1.前言&lt;/h2&gt;&lt;p&gt;docker在创建应用时，必须指定端口的映射。当应用较多时，往往遇到默认的端口相互冲突的情况。配置不冲突的端口往往很麻烦。借助macvlan，可以将每个应用单独分配一个ip，且不需要设置端口映射。可以说是相当方便了。&lt;/p&gt;
+&lt;h2 id=&quot;2-打开网卡混杂模式&quot;&gt;&lt;a href=&quot;#2-打开网卡混杂模式&quot; class=&quot;headerlink&quot; title=&quot;2.打开网卡混杂模式&quot;&gt;&lt;/a&gt;2.打开网卡混杂模式&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;[bash]&quot;&gt;sudo ip link set eth0 promisc on&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    
+    <category term="linux" scheme="http://igeek.cloud/tags/linux/"/>
+    
+    <category term="ubuntu" scheme="http://igeek.cloud/tags/ubuntu/"/>
+    
+    <category term="raspberry pi" scheme="http://igeek.cloud/tags/raspberry-pi/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu Server on Raspberry Pi 4</title>

@@ -137,6 +137,59 @@
     
     
     <article
+  id="post-Ubuntu-Server-RaspberryPi中Docker的macvlan"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/"
+    >Ubuntu Server@RaspberryPi中Docker的macvlan</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/" class="article-date">
+  <time datetime="2021-02-22T02:18:47.000Z" itemprop="datePublished">2021-02-22</time>
+</a>  
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="Ubuntu-Server-Raspberry-Pi中Docker的macvlan"><a href="#Ubuntu-Server-Raspberry-Pi中Docker的macvlan" class="headerlink" title="Ubuntu Server@Raspberry Pi中Docker的macvlan"></a>Ubuntu Server@Raspberry Pi中Docker的macvlan</h1><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>docker在创建应用时，必须指定端口的映射。当应用较多时，往往遇到默认的端口相互冲突的情况。配置不冲突的端口往往很麻烦。借助macvlan，可以将每个应用单独分配一个ip，且不需要设置端口映射。可以说是相当方便了。</p>
+<h2 id="2-打开网卡混杂模式"><a href="#2-打开网卡混杂模式" class="headerlink" title="2.打开网卡混杂模式"></a>2.打开网卡混杂模式</h2><pre><code class="[bash]">sudo ip link set eth0 promisc on</code></pre> 
+      <a class="article-more-link" href="/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspberry-pi/" rel="tag">raspberry pi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
   id="post-Ubuntu Server on Raspberry Pi 4"
   class="article article-type-post"
   itemscope
