@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://igeek.cloud/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/</loc>
+    <lastmod>2021-03-23</lastmod>
+  </url>
+  <url>
     <loc>http://igeek.cloud/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/</loc>
     <lastmod>2021-02-22</lastmod>
   </url>

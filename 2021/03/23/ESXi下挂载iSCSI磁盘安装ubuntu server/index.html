@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Ubuntu Server@RaspberryPi中Docker的macvlan |  iGeeker
+    ESXi下挂载iSCSI磁盘安装ubuntu server |  iGeeker
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -41,7 +41,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Ubuntu-Server-RaspberryPi中Docker的macvlan"
+  id="post-ESXi下挂载iSCSI磁盘安装ubuntu server"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -52,15 +52,15 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Ubuntu Server@RaspberryPi中Docker的macvlan
+  ESXi下挂载iSCSI磁盘安装ubuntu server
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/" class="article-date">
-  <time datetime="2021-02-22T02:18:47.000Z" itemprop="datePublished">2021-02-22</time>
+      <a href="/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/" class="article-date">
+  <time datetime="2021-03-23T08:37:49.000Z" itemprop="datePublished">2021-03-23</time>
 </a>  
     </div>
       
@@ -72,13 +72,25 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="Ubuntu-Server-Raspberry-Pi中Docker的macvlan"><a href="#Ubuntu-Server-Raspberry-Pi中Docker的macvlan" class="headerlink" title="Ubuntu Server@Raspberry Pi中Docker的macvlan"></a>Ubuntu Server@Raspberry Pi中Docker的macvlan</h1><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>docker在创建应用时，必须指定端口的映射。当应用较多时，往往遇到默认的端口相互冲突的情况。配置不冲突的端口往往很麻烦。借助macvlan，可以将每个应用单独分配一个ip，且不需要设置端口映射。可以说是相当方便了。</p>
-<h2 id="2-打开网卡混杂模式"><a href="#2-打开网卡混杂模式" class="headerlink" title="2.打开网卡混杂模式"></a>2.打开网卡混杂模式</h2><pre><code class="[bash]">sudo ip link set eth0 promisc on</code></pre>
-<a id="more"></a>
-<h2 id="3-创建Docker-macvlan网络"><a href="#3-创建Docker-macvlan网络" class="headerlink" title="3. 创建Docker macvlan网络"></a>3. 创建Docker macvlan网络</h2><pre><code class="[bash]">sudo docker network create -d macvlan --subnet=192.168.2.0/24 --gateway=192.168.2.65 -o parent=eth0 macvlan_net</code></pre>
-<h2 id="4-调整已有container的网络"><a href="#4-调整已有container的网络" class="headerlink" title="4.调整已有container的网络"></a>4.调整已有container的网络</h2><p>登录portainer修改network为刚刚创建的macvlan_net，手动设置一个不冲突的ip，或者留空用DHCP自动获取。</p>
-<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/02/22/C4OoJImEwiP7ctU.png" class="gallery-item"><img src="https://i.loli.net/2021/02/22/C4OoJImEwiP7ctU.png"></a></p>
-<h2 id="5-新建的container指定网络"><a href="#5-新建的container指定网络" class="headerlink" title="5.新建的container指定网络"></a>5.新建的container指定网络</h2><pre><code class="[bash]">sudo docker run --network macvlan_net *** #***为其他必要信息</code></pre>
+  <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="ESXi下挂载iSCSI磁盘安装ubuntu-server"><a href="#ESXi下挂载iSCSI磁盘安装ubuntu-server" class="headerlink" title="ESXi下挂载iSCSI磁盘安装ubuntu server"></a>ESXi下挂载iSCSI磁盘安装ubuntu server</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>近期搭上了HP MicroServer Gen8的末班车，替换掉原机器自带的G1610T，改用 Xeon E3-1285L V2，4G内存换成16G的。一台性能还看得过去的NAS便完工了。本次采用的ESXi虚拟方案，ESXi安装到机内U盘。ESXi里面安装了黑群晖，SATA控制器和USB3.0控制器直通给黑群晖。这个配置最多分配11GB内存到黑群晖，剩下的内存感觉有点浪费，不如再搞一台ubuntu server来玩一玩。</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/03/23/SeTosCvz8UZM4Y1.png" class="gallery-item"><img src="https://i.loli.net/2021/03/23/SeTosCvz8UZM4Y1.png"></a></p>
+<p>由于SATA和USB3.0都直通给了黑群晖，没有了安装其他系统的空间。在兼顾性能和稳定性上考虑，采用iSCSI的方式从群晖里共享一块50GB的虚拟磁盘给到ESXi作为ubuntu server的安装空间。<span id="more"></span></p>
+<h2 id="服务器端iSCSI配置"><a href="#服务器端iSCSI配置" class="headerlink" title="服务器端iSCSI配置"></a>服务器端iSCSI配置</h2><p>在群晖的iSCSI Manager里创建iSCSI LUN。空间分配采用的Thin Provisioning，并启用快照，给虚拟机增加一道保险。</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/03/23/OWU39sYnNDFtGlA.png" class="gallery-item"><img src="https://i.loli.net/2021/03/23/OWU39sYnNDFtGlA.png"></a></p>
+<p>创建后新增一个映射，记下IQN。由于是局域网内的应用，暂时没有启用CHAP，也就是没有密码验证。</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/03/23/g9ZwbehpcBCDzoT.png" class="gallery-item"><img src="https://i.loli.net/2021/03/23/g9ZwbehpcBCDzoT.png"></a></p>
+<h2 id="客户端iSCSI配置"><a href="#客户端iSCSI配置" class="headerlink" title="客户端iSCSI配置"></a>客户端iSCSI配置</h2><p>ESXi在存储里选择适配器页面，选中vmhba64,配置ISCSI，用以上获取的IQN添加一个静态目标，并填写群晖的IP地址。</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/03/23/jB2oHOSQq764xIe.png" class="gallery-item"><img src="https://i.loli.net/2021/03/23/jB2oHOSQq764xIe.png"></a></p>
+<p>刷新后发现iSCSI已经连接上了，但是状态显示“正常，已降级”。虽然能正常使用，但是强迫症不能忍。打开ESXi的SSH，登录后运行以下4条命令。</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/03/23/2UBsNgACMbz4Eaj.png" class="gallery-item"><img src="https://i.loli.net/2021/03/23/2UBsNgACMbz4Eaj.png"></a></p>
+<pre><code class="[bash]">esxcli storage nmp satp rule add -s VMW_SATP_LOCAL --device naa.6001405167c70f1d1521d42ead8edfd3 --option=enable_local
+esxcli storage core claiming reclaim -d naa.6001405167c70f1d1521d42ead8edfd3
+esxcli storage core claimrule load
+esxcli storage core claimrule run</code></pre>
+<p>再次刷新后可见状态已经正常了。</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/03/23/toOagAD6CuGexc7.png" class="gallery-item"><img src="https://i.loli.net/2021/03/23/toOagAD6CuGexc7.png"></a></p>
+<p>之后新建数据存储，在这存储上新建虚拟机，运行成功！</p>
+<p><a target="_blank" rel="noopener" href="https://i.loli.net/2021/03/23/ARDbKmLcnWj5pz6.png" class="gallery-item"><img src="https://i.loli.net/2021/03/23/ARDbKmLcnWj5pz6.png"></a></p>
 </div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
@@ -106,7 +118,7 @@
     
     <footer class="article-footer">
        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspberry-pi/" rel="tag">raspberry pi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ESXi/" rel="tag">ESXi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HPE/" rel="tag">HPE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Micro-server-Gen-8/" rel="tag">Micro server Gen 8</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iSCSI/" rel="tag">iSCSI</a></li></ul>
 
     </footer>
   </div>
@@ -114,19 +126,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            ESXi下挂载iSCSI磁盘安装ubuntu server
-          
-        </div>
-      </a>
     
-    
-      <a href="/2021/01/30/Ubuntu%20Server%20on%20Raspberry%20Pi%204/" class="article-nav-link">
+      <a href="/2021/02/22/Ubuntu-Server-RaspberryPi%E4%B8%ADDocker%E7%9A%84macvlan/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Ubuntu Server on Raspberry Pi 4</div>
+        <div class="article-nav-title">Ubuntu Server@RaspberryPi中Docker的macvlan</div>
       </a>
     
   </nav>

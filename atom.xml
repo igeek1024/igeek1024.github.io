@@ -6,7 +6,7 @@
   <link href="http://igeek.cloud/atom.xml" rel="self"/>
   
   <link href="http://igeek.cloud/"/>
-  <updated>2021-02-22T02:20:54.678Z</updated>
+  <updated>2021-03-23T11:36:32.545Z</updated>
   <id>http://igeek.cloud/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ESXi下挂载iSCSI磁盘安装ubuntu server</title>
+    <link href="http://igeek.cloud/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/"/>
+    <id>http://igeek.cloud/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/</id>
+    <published>2021-03-23T08:37:49.000Z</published>
+    <updated>2021-03-23T11:36:32.545Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;ESXi下挂载iSCSI磁盘安装ubuntu-server&quot;&gt;&lt;a href=&quot;#ESXi下挂载iSCSI磁盘安装ubuntu-server&quot; class=&quot;headerlink&quot; title=&quot;ESXi下挂载iSCSI磁盘安装ubuntu server&quot;&gt;&lt;/a&gt;ESXi下挂载iSCSI磁盘安装ubuntu server&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;近期搭上了HP MicroServer Gen8的末班车，替换掉原机器自带的G1610T，改用 Xeon E3-1285L V2，4G内存换成16G的。一台性能还看得过去的NAS便完工了。本次采用的ESXi虚拟方案，ESXi安装到机内U盘。ESXi里面安装了黑群晖，SATA控制器和USB3.0控制器直通给黑群晖。这个配置最多分配11GB内存到黑群晖，剩下的内存感觉有点浪费，不如再搞一台ubuntu server来玩一玩。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.loli.net/2021/03/23/SeTosCvz8UZM4Y1.png&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://i.loli.net/2021/03/23/SeTosCvz8UZM4Y1.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;由于SATA和USB3.0都直通给了黑群晖，没有了安装其他系统的空间。在兼顾性能和稳定性上考虑，采用iSCSI的方式从群晖里共享一块50GB的虚拟磁盘给到ESXi作为ubuntu server的安装空间。</summary>
+    
+    
+    
+    
+    <category term="HPE" scheme="http://igeek.cloud/tags/HPE/"/>
+    
+    <category term="Micro server Gen 8" scheme="http://igeek.cloud/tags/Micro-server-Gen-8/"/>
+    
+    <category term="ESXi" scheme="http://igeek.cloud/tags/ESXi/"/>
+    
+    <category term="iSCSI" scheme="http://igeek.cloud/tags/iSCSI/"/>
+    
+    <category term="Linux" scheme="http://igeek.cloud/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu Server@RaspberryPi中Docker的macvlan</title>
