@@ -6,7 +6,7 @@
   <link href="http://igeek.cloud/atom.xml" rel="self"/>
   
   <link href="http://igeek.cloud/"/>
-  <updated>2021-03-23T11:36:32.545Z</updated>
+  <updated>2021-03-30T10:20:23.375Z</updated>
   <id>http://igeek.cloud/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>自定义Ubuntu SSH登录展示页</title>
+    <link href="http://igeek.cloud/2021/03/30/%E8%87%AA%E5%AE%9A%E4%B9%89Ubuntu-SSH%E7%99%BB%E5%BD%95%E5%B1%95%E7%A4%BA%E9%A1%B5/"/>
+    <id>http://igeek.cloud/2021/03/30/%E8%87%AA%E5%AE%9A%E4%B9%89Ubuntu-SSH%E7%99%BB%E5%BD%95%E5%B1%95%E7%A4%BA%E9%A1%B5/</id>
+    <published>2021-03-30T09:24:58.000Z</published>
+    <updated>2021-03-30T10:20:23.375Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;自定义Ubuntu-SSH登录展示页&quot;&gt;&lt;a href=&quot;#自定义Ubuntu-SSH登录展示页&quot; class=&quot;headerlink&quot; title=&quot;自定义Ubuntu SSH登录展示页&quot;&gt;&lt;/a&gt;自定义Ubuntu SSH登录展示页&lt;/h1&gt;&lt;p&gt;重ubuntu 18.04开始，当用户从SSH登录后，终端将展示一些系统信和推广，这叫motd(message of the day)。这页面可以根据需求调整和定制。默认的登录展示页看起来像下面：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;[bash]&quot;&gt;Welcome to Ubuntu 20.10 (GNU/Linux 5.8.0-48-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Mar 30 04:55:31 PM CST 2021
+
+  System load:  0.0                Processes:                257
+  Usage of /:   15.1% of 44.04GB   Users logged in:          1
+  Memory usage: 24%                IPv4 address for docker0: 172.17.0.1
+  Swap usage:   1%                 IPv4 address for ens160:  192.168.2.171
+
+ * Introducing self-healing high availability clusters in MicroK8s.
+   Simple, hardened, Kubernetes for production, from RaspberryPi to DC.
+
+     https://microk8s.io/high-availability
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+
+Last login: Mon Mar 29 12:54:59 2021 from 192.168.2.104&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    
+    <category term="linux" scheme="http://igeek.cloud/tags/linux/"/>
+    
+    <category term="ubuntu" scheme="http://igeek.cloud/tags/ubuntu/"/>
+    
+    <category term="motd" scheme="http://igeek.cloud/tags/motd/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ESXi下挂载iSCSI磁盘安装ubuntu server</title>
     <link href="http://igeek.cloud/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/"/>
     <id>http://igeek.cloud/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/</id>
     <published>2021-03-23T08:37:49.000Z</published>
-    <updated>2021-03-23T11:36:32.545Z</updated>
+    <updated>2021-03-23T11:48:43.739Z</updated>
     
     
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;ESXi下挂载iSCSI磁盘安装ubuntu-server&quot;&gt;&lt;a href=&quot;#ESXi下挂载iSCSI磁盘安装ubuntu-server&quot; class=&quot;headerlink&quot; title=&quot;ESXi下挂载iSCSI磁盘安装ubuntu server&quot;&gt;&lt;/a&gt;ESXi下挂载iSCSI磁盘安装ubuntu server&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;近期搭上了HP MicroServer Gen8的末班车，替换掉原机器自带的G1610T，改用 Xeon E3-1285L V2，4G内存换成16G的。一台性能还看得过去的NAS便完工了。本次采用的ESXi虚拟方案，ESXi安装到机内U盘。ESXi里面安装了黑群晖，SATA控制器和USB3.0控制器直通给黑群晖。这个配置最多分配11GB内存到黑群晖，剩下的内存感觉有点浪费，不如再搞一台ubuntu server来玩一玩。&lt;/p&gt;

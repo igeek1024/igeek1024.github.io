@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://igeek.cloud/2021/03/30/%E8%87%AA%E5%AE%9A%E4%B9%89Ubuntu-SSH%E7%99%BB%E5%BD%95%E5%B1%95%E7%A4%BA%E9%A1%B5/</loc>
+    
+    <lastmod>2021-03-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://igeek.cloud/2021/03/23/ESXi%E4%B8%8B%E6%8C%82%E8%BD%BDiSCSI%E7%A3%81%E7%9B%98%E5%AE%89%E8%A3%85ubuntu%20server/</loc>
     
     <lastmod>2021-03-23</lastmod>
@@ -95,7 +102,7 @@
 
   <url>
     <loc>http://igeek.cloud/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -103,126 +110,133 @@
   
   <url>
     <loc>http://igeek.cloud/tags/ubuntu-touch/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/linux/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/hexo/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/gitalk/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/gallery/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/ubuntu/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/raspberry-pi/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/zsh/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/highlight-js/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/Wemacro/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/Nikon-ELWD/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://igeek.cloud/tags/%E5%A4%AA%E9%98%B3%E8%9B%BE/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/HPE/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/Micro-server-Gen-8/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/ESXi/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/iSCSI/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://igeek.cloud/tags/Linux/</loc>
-    <lastmod>2021-03-23</lastmod>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/hexo/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/gitalk/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/gallery/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/ubuntu/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/raspberry-pi/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/zsh/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/highlight-js/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/%E6%98%BE%E5%BE%AE%E6%91%84%E5%BD%B1/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/Wemacro/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/Nikon-ELWD/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/%E5%A4%AA%E9%98%B3%E8%9B%BE/</loc>
+    <lastmod>2021-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://igeek.cloud/tags/motd/</loc>
+    <lastmod>2021-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
