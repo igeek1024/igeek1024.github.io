@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>采用草图-拉伸命令建立简单幕墙龙骨</title>
+    <url>/2021/04/14/%E9%87%87%E7%94%A8%E8%8D%89%E5%9B%BE-%E6%8B%89%E4%BC%B8%E5%91%BD%E4%BB%A4%E5%BB%BA%E7%AB%8B%E7%AE%80%E5%8D%95%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8%20/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="1、采用草图-拉伸命令建立简单幕墙龙骨"><a href="#1、采用草图-拉伸命令建立简单幕墙龙骨" class="headerlink" title="1、采用草图-拉伸命令建立简单幕墙龙骨"></a>1、采用草图-拉伸命令建立简单幕墙龙骨</h1><hr>
+<ul>
+<li><strong>绘制截面草图</strong></li>
+<li><strong>从CAD导入复杂截面的方法</strong></li>
+<li><strong>添加拉伸特征</strong></li>
+<li><strong>通过草图特征开孔</strong></li>
+<li><strong>通过草图进行型材加工</strong></li>
+<li><strong>通过参数管理器修改现有模型</strong></li>
+<li><strong>给模型添加物理属性以及控制外观显示效果</strong></li>
+<li><strong>通过工程图模块绘制型材加工图</strong><span id="more"></span>
+<h1 id="草图"><a href="#草图" class="headerlink" title="草图"></a>草图</h1></li>
+</ul>
+<hr>
+<p>在Inventor中，模型可由草图转换而来；我们通过草图+特征的方式来控制模型的生成。Inventor中支持二维或者三维的草图‘。对于常见的幕墙形式，我们一般使用二维草图来建立模型。建模的步骤一般为：1、新建零件；2、绘制草图（或者导入草图）；3、添加拉伸特征；4、添加加工特征（孔、铣缺、切割角度）；5、保存零件。</p>
+<p><a href="https://i.loli.net/2018/12/06/5c08c744e2033.png" title="https://i.loli.net/2018/12/06/5c08c744e2033.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08c744e2033.png" alt="https://i.loli.net/2018/12/06/5c08c744e2033.png"></a></p>
+<p>新建零件</p>
+<p><a href="https://i.loli.net/2018/12/06/5c08c8847cfd7.png" title="https://i.loli.net/2018/12/06/5c08c8847cfd7.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08c8847cfd7.png" alt="https://i.loli.net/2018/12/06/5c08c8847cfd7.png"></a></p>
+<p>选择工作平键建立二维草图</p>
+<p><a href="https://i.loli.net/2018/12/06/5c08cedabcc95.png" title="https://i.loli.net/2018/12/06/5c08cedabcc95.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08cedabcc95.png" alt="https://i.loli.net/2018/12/06/5c08cedabcc95.png"></a></p>
+<p>绘制草图，注意草图的绘制方式与CAD画图不同，必须添加位置约束和尺寸约束，所有线条变为深蓝色后，说明线条被全约束，其位置和尺寸不会发生变动。</p>
+<p><a href="https://www.notion.so/1-2-CAD-1b836a55f0694595a8763372f9a678fe">1.2、<strong>从CAD导入复杂截面的两种方法</strong></a></p>
+<h1 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h1><p><a href="https://i.loli.net/2018/12/06/5c08cf9128f01.png" title="https://i.loli.net/2018/12/06/5c08cf9128f01.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08cf9128f01.png" alt="https://i.loli.net/2018/12/06/5c08cf9128f01.png"></a></p>
+<p>为草图添加拉伸特征，注意拉伸为实体的草图必须为封闭的，开放的草图只能拉伸出曲面。</p>
+<h1 id="参数管理"><a href="#参数管理" class="headerlink" title="参数管理"></a>参数管理</h1><p><a href="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png" title="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png" class="gallery-item"><img src="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png" alt="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png"></a></p>
+<p>可以通过参数管理直接调整草图内的尺寸，参数可以自行命名，且支持中文。</p>
+<h1 id="定位特征和何如在零件上开孔"><a href="#定位特征和何如在零件上开孔" class="headerlink" title="定位特征和何如在零件上开孔"></a>定位特征和何如在零件上开孔</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://help.autodesk.com/videos/FxbXhkMjE6mPEYKKl9KG5_Qy2Y25oTLL/video.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+<h1 id="iProperty指定零件的材料"><a href="#iProperty指定零件的材料" class="headerlink" title="iProperty指定零件的材料"></a>iProperty<strong>指定零件的材料</strong></h1><p><a href="https://i.loli.net/2018/12/10/5c0dc256e4652.png" title="https://i.loli.net/2018/12/10/5c0dc256e4652.png" class="gallery-item"><img src="https://i.loli.net/2018/12/10/5c0dc256e4652.png" alt="https://i.loli.net/2018/12/10/5c0dc256e4652.png"></a></p>
+<p><a href="https://i.loli.net/2018/12/10/5c0dc871df940.png" title="https://i.loli.net/2018/12/10/5c0dc871df940.png" class="gallery-item"><img src="https://i.loli.net/2018/12/10/5c0dc871df940.png" alt="https://i.loli.net/2018/12/10/5c0dc871df940.png"></a></p>
+<p>指定材料后，零件外观会默认变成材料的外观，如果要单独控制，请参考工具》》外观</p>
+<h1 id="工程图"><a href="#工程图" class="headerlink" title="工程图"></a><strong>工程图</strong></h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://help.autodesk.com/videos/h4bHhkMjE6FCmvrxaur79tu0d7oWmv8s/video.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<p>绘制零件加工图的方法</p>
+</div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <tags>
+        <tag>3d</tag>
+        <tag>Inventor</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自定义Ubuntu SSH登录展示页</title>
     <url>/2021/03/30/%E8%87%AA%E5%AE%9A%E4%B9%89Ubuntu-SSH%E7%99%BB%E5%BD%95%E5%B1%95%E7%A4%BA%E9%A1%B5/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="自定义Ubuntu-SSH登录展示页"><a href="#自定义Ubuntu-SSH登录展示页" class="headerlink" title="自定义Ubuntu SSH登录展示页"></a>自定义Ubuntu SSH登录展示页</h1><p>重ubuntu 18.04开始，当用户从SSH登录后，终端将展示一些系统信和推广，这叫motd(message of the day)。这页面可以根据需求调整和定制。默认的登录展示页看起来像下面：</p>

@@ -6,7 +6,7 @@
   <link href="http://igeek.cloud/atom.xml" rel="self"/>
   
   <link href="http://igeek.cloud/"/>
-  <updated>2021-03-30T10:20:23.375Z</updated>
+  <updated>2021-04-14T00:57:37.287Z</updated>
   <id>http://igeek.cloud/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>采用草图-拉伸命令建立简单幕墙龙骨</title>
+    <link href="http://igeek.cloud/2021/04/14/%E9%87%87%E7%94%A8%E8%8D%89%E5%9B%BE-%E6%8B%89%E4%BC%B8%E5%91%BD%E4%BB%A4%E5%BB%BA%E7%AB%8B%E7%AE%80%E5%8D%95%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8%20/"/>
+    <id>http://igeek.cloud/2021/04/14/%E9%87%87%E7%94%A8%E8%8D%89%E5%9B%BE-%E6%8B%89%E4%BC%B8%E5%91%BD%E4%BB%A4%E5%BB%BA%E7%AB%8B%E7%AE%80%E5%8D%95%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8%20/</id>
+    <published>2021-04-14T00:18:07.000Z</published>
+    <updated>2021-04-14T00:57:37.287Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;1、采用草图-拉伸命令建立简单幕墙龙骨&quot;&gt;&lt;a href=&quot;#1、采用草图-拉伸命令建立简单幕墙龙骨&quot; class=&quot;headerlink&quot; title=&quot;1、采用草图-拉伸命令建立简单幕墙龙骨&quot;&gt;&lt;/a&gt;1、采用草图-拉伸命令建立简单幕墙龙骨&lt;/h1&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;绘制截面草图&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;从CAD导入复杂截面的方法&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;添加拉伸特征&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通过草图特征开孔&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通过草图进行型材加工&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通过参数管理器修改现有模型&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;给模型添加物理属性以及控制外观显示效果&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通过工程图模块绘制型材加工图&lt;/strong&gt;</summary>
+    
+    
+    
+    
+    <category term="3d" scheme="http://igeek.cloud/tags/3d/"/>
+    
+    <category term="Inventor" scheme="http://igeek.cloud/tags/Inventor/"/>
+    
+  </entry>
   
   <entry>
     <title>自定义Ubuntu SSH登录展示页</title>
