@@ -1,6 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Inventor模型的装配</title>
+    <url>/2021/04/14/Inventor%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A3%85%E9%85%8D/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="模型的装配"><a href="#模型的装配" class="headerlink" title="模型的装配"></a>模型的装配</h1><hr>
+<ul>
+<li><strong>装配零件（横梁、立柱等）</strong></li>
+<li><strong>装配资源中心零件（紧固件）</strong></li>
+</ul>
+<h1 id="装配零件"><a href="#装配零件" class="headerlink" title="装配零件"></a><strong>装配零件</strong></h1><hr>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://help.autodesk.com/videos/htbXhkMjE6y8U9mhmHOIikvKK6HzD-UU/video.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<span id="more"></span>
+
+<p>本视频为官方教程，比较详细，初学者可仅看如何放置和采用联接、约束的方法简单装配的方法，幕墙里很难遇到高级的技巧。</p>
+<p>以下为幕墙龙骨装配实例：</p>
+<p><a href="https://raw.githubusercontent.com/lv-jw/int/master/img/9.gif" title="https://raw.githubusercontent.com/lv-jw/int/master/img/9.gif" class="gallery-item"><img src="https://raw.githubusercontent.com/lv-jw/int/master/img/9.gif" alt="https://raw.githubusercontent.com/lv-jw/int/master/img/9.gif"></a></p>
+<p>小技巧：零件先放入一个空的装配，固定在原始坐标系，之后不做任何操作立即保存为.iam文件；在立面的装配过程中调用.iam文件，可方便后期调整和在但根立柱加入其他构件。与CAD中块的概念类似。</p>
+<h1 id="装配资源中心零件"><a href="#装配资源中心零件" class="headerlink" title="装配资源中心零件"></a><strong>装配资源中心零件</strong></h1><p><a href="https://raw.githubusercontent.com/lv-jw/int/master/img/3f30376d2dcb84c056bf432fe6dc85af%20(1).GIF" title="https://raw.githubusercontent.com/lv-jw/int/master/img/3f30376d2dcb84c056bf432fe6dc85af%20(1).GIF" class="gallery-item"><img src="https://raw.githubusercontent.com/lv-jw/int/master/img/3f30376d2dcb84c056bf432fe6dc85af%20(1).GIF" alt="https://raw.githubusercontent.com/lv-jw/int/master/img/3f30376d2dcb84c056bf432fe6dc85af%20(1).GIF"></a></p>
+<p>应采用GB（国标）的紧固件，同一工程相同的螺栓应采用相同国标号的部件。如果放置的零件有误，可直接在左侧装配视图的对应零件上右键》》从资源中心替换，替换后的位置信息不会发生变动。</p>
+</div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <tags>
+        <tag>3d</tag>
+        <tag>Inventor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>采用衍生做法建立复杂幕墙龙骨</title>
+    <url>/2021/04/14/%E9%87%87%E7%94%A8%E8%A1%8D%E7%94%9F%E5%81%9A%E6%B3%95%E5%BB%BA%E7%AB%8B%E5%A4%8D%E6%9D%82%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<p>#采用衍生做法建立复杂幕墙龙骨</p>
+<hr>
+<ul>
+<li><strong>什么是衍生</strong></li>
+<li><strong>衍生建模实例</strong></li>
+</ul>
+<h1 id="衍生"><a href="#衍生" class="headerlink" title="衍生"></a>衍生</h1><hr>
+<p>什么是衍生，简单的说是以一个零件或装配为蓝本，在此基础上根据相应的配合关系得到另一个关联零件的方法。关于衍生的详细官方解释，请参考Inventor帮助文档：</p>
+<p><a href="http://help.autodesk.com/view/INVNTOR/2017/CHS/?guid=GUID-04363641-CCF9-4B2C-A3C4-AF676D6F7B1A">Help</a></p>
+<p>创建衍生零件或部件</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p>本例以图书馆转角位置阳角转角立柱与竖直立柱交接位置的竖直立柱下口二面切角为例：</p>
+<p><a href="https://i.loli.net/2018/12/07/5c09e411ad2bc.png" title="https://i.loli.net/2018/12/07/5c09e411ad2bc.png" class="gallery-item"><img src="https://i.loli.net/2018/12/07/5c09e411ad2bc.png" alt="https://i.loli.net/2018/12/07/5c09e411ad2bc.png"></a><span id="more"></span></p>
+<p>1.确定分格尺寸，在CAD中测量获得立柱的竖向高度分格尺寸备用，本例为2908.8520021mm。</p>
+<p>2.根据幕墙构造中立柱与表皮模型的相对位置关系，采用衍生功能导入外表皮，建立控制工作平面来控住上下端口的切割角度，通过在两个控制平面间的钢龙骨截面草图来建模。</p>
+<p><a href="https://i.loli.net/2018/12/07/5c09eb7038d09.gif" title="https://i.loli.net/2018/12/07/5c09eb7038d09.gif" class="gallery-item"><img src="https://i.loli.net/2018/12/07/5c09eb7038d09.gif" alt="https://i.loli.net/2018/12/07/5c09eb7038d09.gif"></a></p>
+<p>使用衍生导入原始曲面，保留需要的面和草图</p>
+<p><a href="https://i.loli.net/2018/12/07/5c09ede00ce9a.gif" title="https://i.loli.net/2018/12/07/5c09ede00ce9a.gif" class="gallery-item"><img src="https://i.loli.net/2018/12/07/5c09ede00ce9a.gif" alt="https://i.loli.net/2018/12/07/5c09ede00ce9a.gif"></a></p>
+<p>建立水平控制工作平面</p>
+<p><a href="https://i.loli.net/2018/12/07/5c09f0391db64.gif" title="https://i.loli.net/2018/12/07/5c09f0391db64.gif" class="gallery-item"><img src="https://i.loli.net/2018/12/07/5c09f0391db64.gif" alt="https://i.loli.net/2018/12/07/5c09f0391db64.gif"></a></p>
+<p>建立斜面控制工作平面</p>
+<p><a href="https://i.loli.net/2018/12/07/5c0a01803f6ab.gif" title="https://i.loli.net/2018/12/07/5c0a01803f6ab.gif" class="gallery-item"><img src="https://i.loli.net/2018/12/07/5c0a01803f6ab.gif" alt="https://i.loli.net/2018/12/07/5c0a01803f6ab.gif"></a></p>
+<p>在水平工作面上绘制草图</p>
+<p><a href="https://i.loli.net/2018/12/07/5c0a0221a9b32.gif" title="https://i.loli.net/2018/12/07/5c0a0221a9b32.gif" class="gallery-item"><img src="https://i.loli.net/2018/12/07/5c0a0221a9b32.gif" alt="https://i.loli.net/2018/12/07/5c0a0221a9b32.gif"></a></p>
+<p>拉伸截面至水平、倾斜控制面</p>
+<p><a href="https://i.loli.net/2018/12/07/5c0a02d3d9b63.gif" title="https://i.loli.net/2018/12/07/5c0a02d3d9b63.gif" class="gallery-item"><img src="https://i.loli.net/2018/12/07/5c0a02d3d9b63.gif" alt="https://i.loli.net/2018/12/07/5c0a02d3d9b63.gif"></a></p>
+<p>将过程中使用的控制平面和原始模型设置为不可见</p>
+<p>模型完成。</p>
+</div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <tags>
+        <tag>3d</tag>
+        <tag>Inventor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从CAD导入复杂截面的两种方法</title>
+    <url>/2021/04/14/%E4%BB%8ECAD%E5%AF%BC%E5%85%A5%E5%A4%8D%E6%9D%82%E6%88%AA%E9%9D%A2%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="从CAD导入复杂截面的两种方法"><a href="#从CAD导入复杂截面的两种方法" class="headerlink" title="从CAD导入复杂截面的两种方法"></a>从CAD导入复杂截面的两种方法</h1><h1 id="1、使用插入ACAD模块导入节点图中的型材"><a href="#1、使用插入ACAD模块导入节点图中的型材" class="headerlink" title="1、使用插入ACAD模块导入节点图中的型材"></a>1、使用插入ACAD模块导入节点图中的型材</h1><p><a href="https://i.loli.net/2018/12/06/5c08d4bb4945d.png" title="https://i.loli.net/2018/12/06/5c08d4bb4945d.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08d4bb4945d.png" alt="https://i.loli.net/2018/12/06/5c08d4bb4945d.png"></a><span id="more"></span></p>
+<p><a href="https://i.loli.net/2018/12/06/5c08d5f983942.png" title="https://i.loli.net/2018/12/06/5c08d5f983942.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08d5f983942.png" alt="https://i.loli.net/2018/12/06/5c08d5f983942.png"></a></p>
+<p><a href="https://i.loli.net/2018/12/06/5c08d63ce0ffe.png" title="https://i.loli.net/2018/12/06/5c08d63ce0ffe.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08d63ce0ffe.png" alt="https://i.loli.net/2018/12/06/5c08d63ce0ffe.png"></a></p>
+<p><a href="https://i.loli.net/2018/12/06/5c08d6b19f221.png" title="https://i.loli.net/2018/12/06/5c08d6b19f221.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08d6b19f221.png" alt="https://i.loli.net/2018/12/06/5c08d6b19f221.png"></a></p>
+<p><a href="https://i.loli.net/2018/12/06/5c08d6fc820d8.png" title="https://i.loli.net/2018/12/06/5c08d6fc820d8.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08d6fc820d8.png" alt="https://i.loli.net/2018/12/06/5c08d6fc820d8.png"></a></p>
+<p>首先在CAD中将开模图存为单独的dwg文件，并复制到Inventor的工程目录，存入适当的目录，列如《型材模图》文件夹。使用ACAD按钮打开刚刚复制到目录里的dwg文件，根据实际情况按提示操作，注意单位应该采用mm，如原始文件为英寸，则需要做出相应的调整，导入草图后应该使用草图医生检查缺失的约束。退出草图前，最好采用固定约束将所有图元固定，以免误操作使图元偏离原有设计尺寸。完成草图编辑后添加拉伸特征，如果不能够顺利拉伸，应及时回退至草图，使用草图医生再次检测存在的问题，根据提示修改。有时图形文件的错误过多，应返回CAD整理多余的线条、合并存在缺口的线条，以截面可以做成面域为检测依据，能够做成面域的多段线就可在Inventor中拉伸。</p>
+<p><a href="https://i.loli.net/2018/12/06/5c08dc56b9f54.png" title="https://i.loli.net/2018/12/06/5c08dc56b9f54.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08dc56b9f54.png" alt="https://i.loli.net/2018/12/06/5c08dc56b9f54.png"></a></p>
+<h1 id="2、使用Ctrl-C、Ctrl-V直接导入节点图中的型材"><a href="#2、使用Ctrl-C、Ctrl-V直接导入节点图中的型材" class="headerlink" title="2、使用Ctrl+C、Ctrl+V直接导入节点图中的型材"></a>2、使用Ctrl+C、Ctrl+V直接导入节点图中的型材</h1><p>首先整理CAD中的截面多段线，做成面域备用。制作时应合并同一直线上的多余线条，使线条的控制点为最少的个数。通过CAD菜单栏的 格式&gt;&gt;&gt;单位，设置图形的单位为毫米mm。然后选择刚刚制作的面域，Ctrl+C复制。返回Inventor草图绘制截面，CTRL+V粘贴即可。通过此方法导入的截面可自动添加约束，但是最好也通过草图医生检测一下，没问题后再进行后续步骤。 </p>
+<p><a href="https://i.loli.net/2018/12/06/5c08de3ec845e.png" title="https://i.loli.net/2018/12/06/5c08de3ec845e.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08de3ec845e.png" alt="https://i.loli.net/2018/12/06/5c08de3ec845e.png"></a></p>
+<p><a href="https://i.loli.net/2018/12/06/5c08e041d9fc5.gif" title="https://i.loli.net/2018/12/06/5c08e041d9fc5.gif" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08e041d9fc5.gif" alt="https://i.loli.net/2018/12/06/5c08e041d9fc5.gif"></a></p>
+</div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <tags>
+        <tag>3d</tag>
+        <tag>Inventor</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>采用草图-拉伸命令建立简单幕墙龙骨</title>
     <url>/2021/04/14/%E9%87%87%E7%94%A8%E8%8D%89%E5%9B%BE-%E6%8B%89%E4%BC%B8%E5%91%BD%E4%BB%A4%E5%BB%BA%E7%AB%8B%E7%AE%80%E5%8D%95%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8%20/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css" /><div class=".article-gallery"<h1 id="1、采用草图-拉伸命令建立简单幕墙龙骨"><a href="#1、采用草图-拉伸命令建立简单幕墙龙骨" class="headerlink" title="1、采用草图-拉伸命令建立简单幕墙龙骨"></a>1、采用草图-拉伸命令建立简单幕墙龙骨</h1><hr>
@@ -23,17 +117,16 @@
 <p>选择工作平键建立二维草图</p>
 <p><a href="https://i.loli.net/2018/12/06/5c08cedabcc95.png" title="https://i.loli.net/2018/12/06/5c08cedabcc95.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08cedabcc95.png" alt="https://i.loli.net/2018/12/06/5c08cedabcc95.png"></a></p>
 <p>绘制草图，注意草图的绘制方式与CAD画图不同，必须添加位置约束和尺寸约束，所有线条变为深蓝色后，说明线条被全约束，其位置和尺寸不会发生变动。</p>
-<p><a href="https://www.notion.so/1-2-CAD-1b836a55f0694595a8763372f9a678fe">1.2、<strong>从CAD导入复杂截面的两种方法</strong></a></p>
 <h1 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h1><p><a href="https://i.loli.net/2018/12/06/5c08cf9128f01.png" title="https://i.loli.net/2018/12/06/5c08cf9128f01.png" class="gallery-item"><img src="https://i.loli.net/2018/12/06/5c08cf9128f01.png" alt="https://i.loli.net/2018/12/06/5c08cf9128f01.png"></a></p>
 <p>为草图添加拉伸特征，注意拉伸为实体的草图必须为封闭的，开放的草图只能拉伸出曲面。</p>
 <h1 id="参数管理"><a href="#参数管理" class="headerlink" title="参数管理"></a>参数管理</h1><p><a href="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png" title="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png" class="gallery-item"><img src="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png" alt="https://i.loli.net/2018/12/10/5c0dc7160b7b2.png"></a></p>
 <p>可以通过参数管理直接调整草图内的尺寸，参数可以自行命名，且支持中文。</p>
-<h1 id="定位特征和何如在零件上开孔"><a href="#定位特征和何如在零件上开孔" class="headerlink" title="定位特征和何如在零件上开孔"></a>定位特征和何如在零件上开孔</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://help.autodesk.com/videos/FxbXhkMjE6mPEYKKl9KG5_Qy2Y25oTLL/video.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h1 id="定位特征和何如在零件上开孔"><a href="#定位特征和何如在零件上开孔" class="headerlink" title="定位特征和何如在零件上开孔"></a>定位特征和何如在零件上开孔</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://help.autodesk.com/videos/FxbXhkMjE6mPEYKKl9KG5_Qy2Y25oTLL/video.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
 <h1 id="iProperty指定零件的材料"><a href="#iProperty指定零件的材料" class="headerlink" title="iProperty指定零件的材料"></a>iProperty<strong>指定零件的材料</strong></h1><p><a href="https://i.loli.net/2018/12/10/5c0dc256e4652.png" title="https://i.loli.net/2018/12/10/5c0dc256e4652.png" class="gallery-item"><img src="https://i.loli.net/2018/12/10/5c0dc256e4652.png" alt="https://i.loli.net/2018/12/10/5c0dc256e4652.png"></a></p>
 <p><a href="https://i.loli.net/2018/12/10/5c0dc871df940.png" title="https://i.loli.net/2018/12/10/5c0dc871df940.png" class="gallery-item"><img src="https://i.loli.net/2018/12/10/5c0dc871df940.png" alt="https://i.loli.net/2018/12/10/5c0dc871df940.png"></a></p>
 <p>指定材料后，零件外观会默认变成材料的外观，如果要单独控制，请参考工具》》外观</p>
-<h1 id="工程图"><a href="#工程图" class="headerlink" title="工程图"></a><strong>工程图</strong></h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://help.autodesk.com/videos/h4bHhkMjE6FCmvrxaur79tu0d7oWmv8s/video.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h1 id="工程图"><a href="#工程图" class="headerlink" title="工程图"></a><strong>工程图</strong></h1><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"video":{"url":"https://help.autodesk.com/videos/h4bHhkMjE6FCmvrxaur79tu0d7oWmv8s/video.mp4"},"danmaku":{"id":"9E2E3368B56CDBB4","api":"http://dplayer.daoapp.io","token":"tokendemo"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 <p>绘制零件加工图的方法</p>
 </div><script src="/js/lightgallery.min.js"></script><script src="/js/lg-thumbnail.js"></script><script src="/js/lg-zoom.js"></script><script src="/js/lg-autoplay.js"></script><script src="/js/lg-fullscreen.js"></script><script src="/js/lg-pager.js"></script><script src="/js/lg-hash.js"></script><script src="/js/lg-video.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {

@@ -6,7 +6,7 @@
   <link href="http://igeek.cloud/atom.xml" rel="self"/>
   
   <link href="http://igeek.cloud/"/>
-  <updated>2021-04-14T00:57:37.287Z</updated>
+  <updated>2021-04-14T06:15:28.228Z</updated>
   <id>http://igeek.cloud/</id>
   
   <author>
@@ -17,11 +17,85 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Inventor模型的装配</title>
+    <link href="http://igeek.cloud/2021/04/14/Inventor%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A3%85%E9%85%8D/"/>
+    <id>http://igeek.cloud/2021/04/14/Inventor%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A3%85%E9%85%8D/</id>
+    <published>2021-04-14T06:13:22.000Z</published>
+    <updated>2021-04-14T06:15:28.228Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;模型的装配&quot;&gt;&lt;a href=&quot;#模型的装配&quot; class=&quot;headerlink&quot; title=&quot;模型的装配&quot;&gt;&lt;/a&gt;模型的装配&lt;/h1&gt;&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;装配零件（横梁、立柱等）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;装配资源中心零件（紧固件）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;装配零件&quot;&gt;&lt;a href=&quot;#装配零件&quot; class=&quot;headerlink&quot; title=&quot;装配零件&quot;&gt;&lt;/a&gt;&lt;strong&gt;装配零件&lt;/strong&gt;&lt;/h1&gt;&lt;hr&gt;
+&lt;div id=&quot;dplayer0&quot; class=&quot;dplayer hexo-tag-dplayer-mark&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer0&quot;),&quot;theme&quot;:&quot;#FADFA3&quot;,&quot;loop&quot;:true,&quot;video&quot;:{&quot;url&quot;:&quot;https://help.autodesk.com/videos/htbXhkMjE6y8U9mhmHOIikvKK6HzD-UU/video.mp4&quot;},&quot;danmaku&quot;:{&quot;id&quot;:&quot;9E2E3368B56CDBB4&quot;,&quot;api&quot;:&quot;http://dplayer.daoapp.io&quot;,&quot;token&quot;:&quot;tokendemo&quot;}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()&lt;/script&gt;</summary>
+    
+    
+    
+    
+    <category term="3d" scheme="http://igeek.cloud/tags/3d/"/>
+    
+    <category term="Inventor" scheme="http://igeek.cloud/tags/Inventor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>采用衍生做法建立复杂幕墙龙骨</title>
+    <link href="http://igeek.cloud/2021/04/14/%E9%87%87%E7%94%A8%E8%A1%8D%E7%94%9F%E5%81%9A%E6%B3%95%E5%BB%BA%E7%AB%8B%E5%A4%8D%E6%9D%82%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8/"/>
+    <id>http://igeek.cloud/2021/04/14/%E9%87%87%E7%94%A8%E8%A1%8D%E7%94%9F%E5%81%9A%E6%B3%95%E5%BB%BA%E7%AB%8B%E5%A4%8D%E6%9D%82%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8/</id>
+    <published>2021-04-14T06:11:47.000Z</published>
+    <updated>2021-04-14T06:12:55.952Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;p&gt;#采用衍生做法建立复杂幕墙龙骨&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;什么是衍生&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;衍生建模实例&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;衍生&quot;&gt;&lt;a href=&quot;#衍生&quot; class=&quot;headerlink&quot; title=&quot;衍生&quot;&gt;&lt;/a&gt;衍生&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;什么是衍生，简单的说是以一个零件或装配为蓝本，在此基础上根据相应的配合关系得到另一个关联零件的方法。关于衍生的详细官方解释，请参考Inventor帮助文档：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://help.autodesk.com/view/INVNTOR/2017/CHS/?guid=GUID-04363641-CCF9-4B2C-A3C4-AF676D6F7B1A&quot;&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;创建衍生零件或部件&lt;/p&gt;
+&lt;h1 id=&quot;实例&quot;&gt;&lt;a href=&quot;#实例&quot; class=&quot;headerlink&quot; title=&quot;实例&quot;&gt;&lt;/a&gt;实例&lt;/h1&gt;&lt;p&gt;本例以图书馆转角位置阳角转角立柱与竖直立柱交接位置的竖直立柱下口二面切角为例：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.loli.net/2018/12/07/5c09e411ad2bc.png&quot; title=&quot;https://i.loli.net/2018/12/07/5c09e411ad2bc.png&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://i.loli.net/2018/12/07/5c09e411ad2bc.png&quot; alt=&quot;https://i.loli.net/2018/12/07/5c09e411ad2bc.png&quot;&gt;&lt;/a&gt;</summary>
+    
+    
+    
+    
+    <category term="3d" scheme="http://igeek.cloud/tags/3d/"/>
+    
+    <category term="Inventor" scheme="http://igeek.cloud/tags/Inventor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从CAD导入复杂截面的两种方法</title>
+    <link href="http://igeek.cloud/2021/04/14/%E4%BB%8ECAD%E5%AF%BC%E5%85%A5%E5%A4%8D%E6%9D%82%E6%88%AA%E9%9D%A2%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/"/>
+    <id>http://igeek.cloud/2021/04/14/%E4%BB%8ECAD%E5%AF%BC%E5%85%A5%E5%A4%8D%E6%9D%82%E6%88%AA%E9%9D%A2%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/</id>
+    <published>2021-04-14T06:08:18.000Z</published>
+    <updated>2021-04-14T06:10:59.467Z</updated>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;从CAD导入复杂截面的两种方法&quot;&gt;&lt;a href=&quot;#从CAD导入复杂截面的两种方法&quot; class=&quot;headerlink&quot; title=&quot;从CAD导入复杂截面的两种方法&quot;&gt;&lt;/a&gt;从CAD导入复杂截面的两种方法&lt;/h1&gt;&lt;h1 id=&quot;1、使用插入ACAD模块导入节点图中的型材&quot;&gt;&lt;a href=&quot;#1、使用插入ACAD模块导入节点图中的型材&quot; class=&quot;headerlink&quot; title=&quot;1、使用插入ACAD模块导入节点图中的型材&quot;&gt;&lt;/a&gt;1、使用插入ACAD模块导入节点图中的型材&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://i.loli.net/2018/12/06/5c08d4bb4945d.png&quot; title=&quot;https://i.loli.net/2018/12/06/5c08d4bb4945d.png&quot; class=&quot;gallery-item&quot;&gt;&lt;img src=&quot;https://i.loli.net/2018/12/06/5c08d4bb4945d.png&quot; alt=&quot;https://i.loli.net/2018/12/06/5c08d4bb4945d.png&quot;&gt;&lt;/a&gt;</summary>
+    
+    
+    
+    
+    <category term="3d" scheme="http://igeek.cloud/tags/3d/"/>
+    
+    <category term="Inventor" scheme="http://igeek.cloud/tags/Inventor/"/>
+    
+  </entry>
+  
+  <entry>
     <title>采用草图-拉伸命令建立简单幕墙龙骨</title>
     <link href="http://igeek.cloud/2021/04/14/%E9%87%87%E7%94%A8%E8%8D%89%E5%9B%BE-%E6%8B%89%E4%BC%B8%E5%91%BD%E4%BB%A4%E5%BB%BA%E7%AB%8B%E7%AE%80%E5%8D%95%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8%20/"/>
     <id>http://igeek.cloud/2021/04/14/%E9%87%87%E7%94%A8%E8%8D%89%E5%9B%BE-%E6%8B%89%E4%BC%B8%E5%91%BD%E4%BB%A4%E5%BB%BA%E7%AB%8B%E7%AE%80%E5%8D%95%E5%B9%95%E5%A2%99%E9%BE%99%E9%AA%A8%20/</id>
     <published>2021-04-14T00:18:07.000Z</published>
-    <updated>2021-04-14T00:57:37.287Z</updated>
+    <updated>2021-04-14T06:03:41.048Z</updated>
     
     
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/lightgallery.min.css&quot; /&gt;&lt;div class=&quot;.article-gallery&quot;&lt;h1 id=&quot;1、采用草图-拉伸命令建立简单幕墙龙骨&quot;&gt;&lt;a href=&quot;#1、采用草图-拉伸命令建立简单幕墙龙骨&quot; class=&quot;headerlink&quot; title=&quot;1、采用草图-拉伸命令建立简单幕墙龙骨&quot;&gt;&lt;/a&gt;1、采用草图-拉伸命令建立简单幕墙龙骨&lt;/h1&gt;&lt;hr&gt;
